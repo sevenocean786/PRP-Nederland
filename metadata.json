@@ -1,0 +1,8 @@
+{
+  "name": "PRPNederland - Premium Regeneratieve Esthetiek",
+  "description": "Een complete, premium website voor PRPNederland, gespecialiseerd in PRP, mesotherapie en regeneratieve behandelingen met een focus op luxe en medische expertise.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

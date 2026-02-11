@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRPNederland | Premium Regeneratieve Esthetiek</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#B08D57',
+                        secondary: '#2B2B2B',
+                        'bg-main': '#F5F5F5',
+                        'text-dark': '#111111',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'Helvetica', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    borderRadius: {
+                        'premium': '14px',
+                    },
+                    animation: {
+                        'blink': 'blink 2s infinite',
+                    },
+                    keyframes: {
+                        blink: {
+                            '0%, 100%': { opacity: 1, transform: 'scale(1)' },
+                            '50%': { opacity: 0.7, transform: 'scale(1.05)', filter: 'brightness(1.2)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            color: #B08D57;
+        }
+        .prose h2, .prose h3 { font-family: 'Playfair Display', serif; color: #111111; }
+        .prose p { color: #2B2B2B; line-height: 1.8; }
+        .dark .prose h2, .dark .prose h3 { color: #ffffff; }
+        .dark .prose p { color: #cccccc; }
+        html { scroll-behavior: smooth; }
+        
+        .dark {
+            background-color: #1a1a1a;
+            color: #ffffff;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.40.0"
+  }
+}
+</script>
+</head>
+<body class="bg-bg-main text-text-dark font-sans selection:bg-primary/30 transition-colors duration-300">
+    <div id="root"></div>
+</body>
+</html>
